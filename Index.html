@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Escala Plantão 24x7</title>
+  <meta name="description" content="Portal de acesso ao app de escala de plantão 24x7." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-row">
+      <div class="brand">
+        <div class="brand-mark">24x7</div>
+        <div class="brand-text">
+          <h1>Escala Plantão</h1>
+          <p class="subtitle">Portal rápido para o app (Glide/Atoms)</p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn" id="openAppBtn">Abrir em nova aba</button>
+        <button class="btn btn-secondary" id="copyLinkBtn">Copiar link</button>
+        <button class="btn btn-secondary" id="toggleEmbedBtn">Mostrar/ocultar embed</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <article class="card">
+        <h2>Como usar (input por período)</h2>
+        <ol>
+          <li>Acesse o app.</li>
+          <li>Abra <strong>Nova Escala</strong>.</li>
+          <li>Selecione colaborador + data início + data fim.</li>
+          <li>Clique em <strong>Gerar Preview</strong> e depois em <strong>Confirmar</strong>.</li>
+        </ol>
+        <p class="hint">Dica: adicione esta página aos favoritos no celular.</p>
+      </article>
+
+      <article class="card">
+        <h2>Regras do plantão</h2>
+        <ul>
+          <li>Sem duplicidade de turno no mesmo dia.</li>
+          <li>Sem dois turnos no mesmo dia para o mesmo colaborador.</li>
+          <li>Descanso: turno noite bloqueia madrugada do dia seguinte.</li>
+          <li>Limites mensais: CLT 48h / PJ 72h (ajustável).</li>
+        </ul>
+        <p class="hint">Se o embed não carregar, use “Abrir em nova aba”.</p>
+      </article>
+    </section>
+
+    <section class="embed-wrap" id="embedWrap">
+      <div class="embed-header">
+        <h2>App</h2>
+        <span class="badge" id="embedStatus">Carregando…</span>
+      </div>
+
+      <div class="embed">
+        <iframe
+          id="appFrame"
+          title="Escala Plantão 24x7"
+          loading="lazy"
+          referrerpolicy="no-referrer"
+          allow="clipboard-read; clipboard-write"
+        ></iframe>
+      </div>
+
+      <p class="small">
+        Observação: alguns apps podem bloquear carregamento em iframe por segurança. Se isso acontecer, abra em nova aba.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <span class="small">© <span id="year"></span> Escala Plantão 24x7</span>
+      <span class="small">•</span>
+      <a class="small link" href="https://atoms.dev/chat/87a71902b2b342d5919d99aa20890878" target="_blank" rel="noopener noreferrer">
+        Abrir app direto
+      </a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
