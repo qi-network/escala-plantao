@@ -1,4 +1,4 @@
-const APP_URL = "https://script.google.com/macros/s/AKfycbxWqRh8CqjAPZgqae97m4cgW6079IKwtB5IWhLLmY04IRK0daDGgXDpbeMYcwNvJUQjIA/exec";
+const APP_URL = https://script.google.com/macros/s/AKfycbymmW-ghQ2c3NhA8p6NISyyuhkqsYGk9nBS0EaY-rFG0sDXdaCjaBN35Ua_mLmPxIAGuw/exec;
 
 const frame = document.getElementById("appFrame");
 const openBtn = document.getElementById("openAppBtn");
@@ -52,4 +52,5 @@ copyBtn.addEventListener("click", async () => {
 });
 
 init();
+
 
