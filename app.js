@@ -1,4 +1,4 @@
-const APP_URL = "https://atoms.dev/chat/87a71902b2b342d5919d99aa20890878";
+const APP_URL = "https://script.google.com/macros/s/AKfycbxWqRh8CqjAPZgqae97m4cgW6079IKwtB5IWhLLmY04IRK0daDGgXDpbeMYcwNvJUQjIA/exec";
 
 const frame = document.getElementById("appFrame");
 const openBtn = document.getElementById("openAppBtn");
@@ -52,3 +52,4 @@ copyBtn.addEventListener("click", async () => {
 });
 
 init();
+
